@@ -35,7 +35,6 @@ class Platron extends Simpla
 			'pg_lifetime'			=> ($payment_settings['lifetime'])?$payment_settings['lifetime']*60:0,
 			'pg_testing_mode'		=> ($payment_settings['testmode'] == 'test')? 1 : 0 ,
 			'pg_description'		=> $strDescription,
-			'pg_user_ip'			=> $_SERVER['REMOTE_ADDR'],
 			'pg_language'			=> $payment_settings['language'],
 			'pg_check_url'			=> $server_url,
 			'pg_result_url'			=> $server_url,
